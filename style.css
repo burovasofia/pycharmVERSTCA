@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    font-family: 'Cardo', serif;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     color: #6c7279;
@@ -28,8 +27,9 @@ p {
 
 .container {
     width: %;
-    max-width: 1172px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* Header
@@ -136,6 +136,7 @@ p {
     border: 0;
     cursor: pointer;
     transition: background .1s linear;
+    text-align: center;
 
 }
 
@@ -249,6 +250,257 @@ p {
 
 .works__text {
     font-size: 14px;
+    color: #fff;
+}
+
+
+/* Team
+==============*/
+
+.team {
+    margin: 100px 0 70px;
+}
+
+
+.team__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+
+.team__item {
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.team__photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    font-size: 22px;
+    color: #2d3033;
+    margin-bottom: 20px;
+}
+
+.team__name {
+    font-size: 22px;
+    color: #2d3033;
+    margin-bottom: 8px;
+}
+
+.team__prof {
+    font-size: 13px;
+    color: #e84545;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.team__text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6c7279;
+
+}
+
+
+/* Social
+==============*/
+
+.social {
+    display: flex;
+}
+
+.social--footer {
+    justify-content: center;
+}
+
+.social__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 4px;
+
+    border: 1px solid #e8ecee;
+    background-color: #fff;
+
+    transition: background .1s linear;
+}
+
+.social__item:hover {
+    background-color: #e8ecee;
+}
+
+.social--footer .social__item {
+    background-color: transparent;
+    background: none;
+    border-width: 2.5px;
+    border-radius: 2.5px;
+}
+
+.social--footer .social__item:hover {
+    background-color: #fff;
+}
+
+.social__icon {
+    display: block;
+    height: 18px;
+    fill: #c6cacc;
+}
+
+.social__item:hover .social__icon {
+    fill: #000;
+    transition: fill .1s linear;
+}
+
+.social--footer .social__icon {
+    fill: #fff;
+}
+
+/* reviews
+==============*/
+
+.reviews {
+    background-color: #53354a;
+    overflow: hidden;
+}
+
+
+.reviews__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reviews__photo {
+    width: 50%;
+    height: 500px;
+    position: relative;
+}
+
+.reviews__img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+
+    transform: translateY(-50%);
+}
+
+.reviews__content {
+    width: 50%;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.reviews__text {
+    font-family: 'Cardo', serif;
+    font-size: 36px;
+    font-style: italic;
+    line-height: 1.2;
+    color: #fff;
+    margin: 25px;
+}
+
+.reviews__author {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+
+
+}
+
+
+
+/* Download
+==============*/
+
+.download {
+    margin: 90px 0;
+    text-align: center;
+
+}
+
+.download__title {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.download__text {
+    font-size: 13px;
+    color: #000;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.btn btn--red {
+
+}
+
+
+
+
+/* Footer
+==============*/
+
+.footer {
+
+    background-color: #3a3e64;
+
+}
+
+.footer__iner {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 70px 0;
+}
+
+.footer__block {
+    padding: 0 15px;
+    width: 33.3333%;
+    text-align: center;
+
+}
+
+.footer__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+
+.footer__address {
+    font-size: 14px;
+    line-height: 1.5;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.5)
+
+}
+
+.copyright {
+    background-color: #313454;
+    padding: 20px 0;
+}
+
+.copyright__text {
+    text-align: center;
+    color: #808080;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+.copyright__text span {
     color: #fff;
 }
 
